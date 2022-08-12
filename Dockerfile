@@ -18,6 +18,7 @@ RUN apt-get update -qq \
     libeigen3-dev \
     libtbb-dev \
     python3-pip \
+    time \
 # Install python packages
     && pip install -r requirements.txt \
 # Cleanup
