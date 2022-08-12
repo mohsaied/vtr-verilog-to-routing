@@ -3,6 +3,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # set out workspace
 ENV WORKSPACE=/workspace
 RUN mkdir -p ${WORKSPACE}
+RUN mkdir -p /vtr_dev
 WORKDIR ${WORKSPACE}
 COPY . ${WORKSPACE}
 # Install and cleanup is done in one command to minimize the build cache size
